@@ -6,7 +6,6 @@ import { Provider } from 'react-redux'
 import { store } from './store.js'
 import { Router, Route, browserHistory } from 'react-router'
 
-
 ReactDOM.render(
   <Provider store={store}>
     <Router history={browserHistory}>
@@ -15,3 +14,4 @@ ReactDOM.render(
     </Router>
   </Provider>,
   document.getElementById('root'));
+

@@ -1,13 +1,21 @@
 import React, { Component } from 'react';
+import { connect } from 'react-redux'
 
 export class AddIngredients extends Component {
   render(){
+   debugger
     return(
       <div>
-          Add More Ingredients
+  
+          <h1>"Heyy"</h1>
+     
       </div>
     )
   }
 }
 
-export const ConnectedAddIngredients =  AddIngredients
+export const ConnectedAddIngredients =  connect(mapStateToProps)(AddIngredients)
+
+function mapStateToProps(state) {
+ return {ingredients: state.ingredients}
+}
